@@ -8,6 +8,7 @@
     android:padding="16dp"
     tools:context=".SignupActivity">
 
+    <!-- Email Field -->
     <EditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -19,13 +20,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toTopOf="@id/signupPassword"
         android:autofillHints="" />
 
+    <!-- Password Field -->
     <EditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -37,12 +39,68 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signupEmail"
-        app:layout_constraintBottom_toTopOf="@id/signupButton"
+        app:layout_constraintBottom_toTopOf="@id/signupStudentName"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:autofillHints="" />
 
+    <!-- Student Name Field -->
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupStudentName"
+        android:hint="@string/full_name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupPassword"
+        app:layout_constraintBottom_toTopOf="@id/signupErpId"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="" />
+
+    <!-- ERP ID Field -->
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupErpId"
+        android:hint="@string/erp_id"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupStudentName"
+        app:layout_constraintBottom_toTopOf="@id/signupVehicleNumber"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="" />
+
+    <!-- Vehicle Number Field -->
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupVehicleNumber"
+        android:hint="@string/vehicle_number"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupErpId"
+        app:layout_constraintBottom_toTopOf="@id/signupButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        tools:ignore="TextFields" />
+
+    <!-- Signup Button -->
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -54,8 +112,9 @@
         app:layout_constraintBottom_toTopOf="@+id/loginText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signupPassword"/>
+        app:layout_constraintTop_toBottomOf="@id/signupVehicleNumber" />
 
+    <!-- Login Text -->
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -68,6 +127,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signupButton"/>
+        app:layout_constraintTop_toBottomOf="@id/signupButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
