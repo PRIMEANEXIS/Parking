@@ -1,9 +1,42 @@
 <resources>
-    <string name="app_name">Parking</string>
-    <string name="already_registered_login">Already Registered? Login</string>
-    <string name="signup">SIGNUP</string>
-    <string name="password">Password</string>
+
+    <!-- Error messages -->
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_password_length">Password must be at least 6 characters long</string>
+    <string name="error_password_complexity">Password must include at least one uppercase letter, one lowercase letter, one digit, and one special symbol</string>
+    <string name="error_invalid_full_name">Invalid full name</string>
+    <string name="error_invalid_erp_id">Invalid ERP ID</string>
+    <string name="error_invalid_vehicle_number">Invalid vehicle number</string>
+
+    <!-- Other text -->
+    <string name="signup_successful">Signup Successful</string>
+    <string name="signup_unsuccessful">Signup Unsuccessful</string>
+    <string name="already_registered_login">Already registered? Login</string>
+    <string name="not_yet_registered_signup">Not yet registered? Signup</string>
+
+    <!-- Placeholder text (replace with your actual default values) -->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="erp_id_hint">ERP ID</string>
+    <string name="vehicle_number_hint">Vehicle Number</string>
+    <string name="signup_button_text">Signup</string>
+    <string name="login_text">Already registered? Login</string>
     <string name="email">Email</string>
-    <string name="login">LOGIN</string>
-    <string name="not_yet_registered_signup">Not Yet Registered? Signup</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="erp_id">Erp Id</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="signup">SIGNUP</string>
+    <string name="app_name">Parking</string>
+    <string name="login">Login</string>
+
+    <!-- Login password error messages -->
+    <string name="error_password_uppercase">Password should contain at least one capital letter</string>
+    <string name="error_password_lowercase">Password should contain at least one small letter</string>
+    <string name="error_password_special_symbol">Password should contain at least one special symbol</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="error_invalid_password">Invalid Password\n</string>
+
 </resources>
