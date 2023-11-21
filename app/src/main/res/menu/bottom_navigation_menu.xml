@@ -1,0 +1,11 @@
+<!-- bottom_navigation_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_buy_pass"
+        android:title="@string/buy_pass"
+        android:background="@color/green"/>
+    <item
+        android:id="@+id/navigation_history"
+        android:title="@string/history"
+        android:background="@color/green"/>
+</menu>

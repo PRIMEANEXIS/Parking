@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_user_profile.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_background"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:padding="10dp">
+
+
+    <!-- User Full Name -->
+    <TextView
+        android:id="@+id/textFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- User ERP ID -->
+    <TextView
+        android:id="@+id/textErpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ERP ID: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textFullName"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- User Vehicle Number -->
+    <TextView
+        android:id="@+id/textVehicleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Number: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textErpId"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textPassStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass Status: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textVehicleNumber"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Pass Type -->
+    <TextView
+        android:id="@+id/textPassType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass Type: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textPassStatus"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Pass Purchase Date -->
+    <TextView
+        android:id="@+id/textPurchaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase Date: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textPassType"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Pass Expiry Date -->
+    <TextView
+        android:id="@+id/textExpiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textPurchaseDate"/>
+
+</RelativeLayout>

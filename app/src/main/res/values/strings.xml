@@ -38,5 +38,16 @@
     <string name="login_successful">Login Successful</string>
     <string name="login_failed">Login Failed</string>
     <string name="error_invalid_password">Invalid Password\n</string>
+    <string name="error_empty_email">Enter Email</string>
+    <string name="error_empty_password">Enter Password</string>
+    <string name="home">Home</string>
+    <string name="buy_pass">Buy Pass</string>
+    <string name="history">History</string>
+    <string name="buy_daily_pass_of_rs_5">Buy Daily Pass of Rs 5</string>
+    <string name="buy_monthly_pass_of_rs_5">Buy Monthly Pass of Rs 5</string>
+    <string name="buy_weekly_pass_of_rs_5">Buy Weekly Pass of Rs 5</string>
+    <string name="button">Button</string>
+    <string name="park_easy">Park Easy</string>
+    <string name="payment_gateway">Payment Gateway</string>
 
 </resources>

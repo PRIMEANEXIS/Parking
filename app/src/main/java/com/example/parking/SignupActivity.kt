@@ -151,9 +151,10 @@ class SignupActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         val userId = firebaseAuth.currentUser?.uid
+                        val capitalizedFullName = standardizeFullName(binding.signupStudentName.text.toString())
                         saveUserDataToDatabase(
                             userId,
-                            binding.signupStudentName.text.toString(),
+                            capitalizedFullName,  // Capitalize full name before saving
                             binding.signupErpId.text.toString(),
                             binding.signupVehicleNumber.text.toString()
                         )
